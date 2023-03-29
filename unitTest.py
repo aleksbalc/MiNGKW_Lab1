@@ -1,5 +1,5 @@
 import unittest
-from EmailExtractor import EmailExtractor
+from Lab1git.EmailExtractor import EmailExtractor
 
 class EmailExtractorTestCase(unittest.TestCase):
     def setUp(self) -> None:

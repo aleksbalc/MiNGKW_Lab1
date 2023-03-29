@@ -19,14 +19,13 @@ class EmailExtractor:
         res = pattern.findall(self.email)
         name = res[0][1]
         name.capitalize()
-        return name
+        return name.capitalize()
 
     def get_surname(self):
         pattern = re.compile(self.regex)
         res = pattern.findall(self.email)
         surname = res[0][2]
-        surname.capitalize()
-        return surname
+        return surname.capitalize()
 
     def is_male(self) -> bool:
         name = self.get_name()
