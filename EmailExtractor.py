@@ -18,7 +18,6 @@ class EmailExtractor:
         pattern = re.compile(self.regex)
         res = pattern.findall(self.email)
         name = res[0][1]
-        name.capitalize()
         return name.capitalize()
 
     def get_surname(self):
